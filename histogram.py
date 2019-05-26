@@ -14,6 +14,7 @@ corresponds to the following diagram:
 
 l = [1, 5, 2, 5, 3, 4, 5, 7]
 
+#first solution
 for x in range(max(l)):
 	ch = len(l) * [" "]
 	for i in range(len(l)):
@@ -21,5 +22,21 @@ for x in range(max(l)):
 			ch[i] = "x"
 			l[i] -= 1
 	print(' '.join(ch))
+
+#O(n) solution O(n²) print
+
+l = [1, 5, 2, 5, 3, 4, 5, 7]
+print('-'*len(l)*2)
+
+matrix = []
+max_value = max(l)
+
+for x in l:
+	matrix.append((max_value-x) * ' ' + x * '*')
+
+for j in range(len(matrix[0])):
+	for i in range(len(matrix)):
+		print(matrix[i][j], end=' ')
+	print(end='\n')
 
 
