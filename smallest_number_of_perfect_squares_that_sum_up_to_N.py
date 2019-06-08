@@ -28,5 +28,6 @@ def samallest_number(number):
 		times += 1
 	return (times, t)
 
+print(lowest_power_of_two(40))
 print(samallest_number(4))
 print(samallest_number(17))

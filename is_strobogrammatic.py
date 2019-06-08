@@ -17,6 +17,6 @@ def last_number(N):
 N = 5
 
 a = 10**(N-1)
-b = 9*last_number(N)
+b = 9*sum([10**i for i in range(N)])
 
 print('found ',len([i for i in range(a,b) if is_strobogrammatic(i)]))
