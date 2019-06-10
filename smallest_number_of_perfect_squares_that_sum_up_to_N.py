@@ -17,7 +17,7 @@ def lowest_power_of_two(number):
 		power_of_two = 2**y
 	return power_of_two
 
-def samallest_number(number):
+def smallest_number(number):
 	x = number
 	times = 0
 	t = ()
@@ -29,5 +29,5 @@ def samallest_number(number):
 	return (times, t)
 
 print(lowest_power_of_two(40))
-print(samallest_number(4))
-print(samallest_number(17))
+print(smallest_number(4))
+print(smallest_number(17))
