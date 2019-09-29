@@ -13,8 +13,5 @@ for s in reversed(scores):
 		alice_ranks[score] = scores.index(s) + 2
 		uniq_alice.remove(score)
 
-for a in uniq_alice:
-	alice_ranks[a] = 1
-
 for i in alice_scores:
-	print(alice_ranks[i])
+	print(alice_ranks.get(i,1))
